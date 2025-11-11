@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>เว็บเช็คอุณหภูมิทั่วโลก 🌍</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+zWZsm8tPGp8E6zJ3sVgZp5ZZkGkO8y+H5P3p2BZo="
+    crossorigin=""
+  />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>🌍 เว็บเช็คอุณหภูมิทั่วโลก</h2>
+
+      <div class="input-group">
+        <input id="cityInput" placeholder="พิมพ์ชื่อเมือง เช่น Bangkok" />
+        <button id="searchBtn">ค้นหา</button>
+      </div>
+
+      <button id="locBtn" class="use-location">📍 ใช้ตำแหน่งปัจจุบัน</button>
+
+      <div id="result" class="result">
+        <div id="place"></div>
+        <div id="icon"></div>
+        <div id="temp" class="big"></div>
+        <div id="meta"></div>
+        <button id="toggleUnit" class="toggle">เปลี่ยนเป็น °F</button>
+      </div>
+
+      <p id="status"></p>
+    </div>
+
+    <div id="map"></div>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j7kC/zs4z3h3NxkzF+I/1GcV8RpE2z3tX6p4gP8="
+    crossorigin=""
+  ></script>
+  <script src="script.js"></script>
+</body>
+</html>
