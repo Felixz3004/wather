@@ -97,13 +97,6 @@ button:hover {
   font-size: 13px;
 }
 
-#map {
-  height: 240px;
-  width: 90%;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
 @media (max-width: 480px) {
   .big {
     font-size: 40px;
